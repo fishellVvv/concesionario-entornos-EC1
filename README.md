@@ -2,9 +2,14 @@
 
 Aplicación de consola para gestionar un concesionario de motos. Permite administrar clientes y catálogo de motos, registrar ventas con **una o varias motos por venta** y llevar **control de stock**.
 
-## Requisitos para compilar y ejecutar
-- **Java 21+** (JDK 21 o superior)
-- **Maven**
+---
+
+## Requisitos
+- **JDK 17** o superior
+- **Maven 3.9+**
+- (Opcional) IntelliJ IDEA / VS Code / Eclipse
+
+---
 
 ## Instrucciones de uso
 
@@ -46,8 +51,35 @@ Aplicación de consola para gestionar un concesionario de motos. Permite adminis
     - Búsqueda por cliente
     - Mostrar Totales Ventas
 
-> La entrada es validada (números, rangos, índices). La salida es por consola.
+---
+
+## Estructura del proyecto
+```css
+concesionario-entornos-EC1/
+├─ pom.xml
+├─ README.md
+├─ docs/  # Javadoc HTML (index.html)
+└─ src/
+   └─ main/java/
+      └─ concesionario/
+         ├─ Main.java
+         ├─ modelo/
+         │  ├─ Cliente.java
+         │  ├─ Moto.java
+         │  └─ Venta.java
+         └─ servicio/
+            └─ Datos.java
+```
+
+---
+
+## Documentación Javadoc
+La documentación generada está en /docs/index.html
+
+→ [Documentación Javadoc](./docs/index.html)
+
+---
 
 ## Autoría y licencia
-Autor: **Víctor García Vigil**  
-Licencia: Uso académico
+Autor: **Víctor García Vigil (fishellVvv)**  
+Licencia: MIT. Puedes usar y modificar este proyecto con libertad.
