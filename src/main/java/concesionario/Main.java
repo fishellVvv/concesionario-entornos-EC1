@@ -7,10 +7,23 @@ import concesionario.modelo.Moto;
 import concesionario.modelo.Venta;
 import concesionario.servicio.Datos;
 
+/**
+ * Aplicación de consola para la gestión del concesionario.
+ * <p>Se encarga de mostrar menús, leer la entrada de usuario y delegar las
+ * operaciones en el servicio {@link concesionario.servicio.Datos}.</p>
+ * <p>No contiene lógica de negocio: solo orquesta E/S y llamadas a servicio.</p>
+ * @author Víctor
+ * @version 1.0
+ */
 public class Main {
     private static final Scanner sc = new Scanner(System.in);
     private static final Datos datos = new Datos();
 
+    /**
+     * Punto de entrada del programa. Ejecuta el bucle del menú principal
+     * hasta que el usuario elige la opción de salida.
+     * @param args argumentos de línea de comandos (no usados)
+     */
     public static void main(String[] args) {
         int opcion;
         do {
