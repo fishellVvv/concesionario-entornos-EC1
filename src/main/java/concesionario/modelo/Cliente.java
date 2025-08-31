@@ -52,6 +52,8 @@ public class Cliente {
     /** Actualiza el correo electrónico. */
     public void setEmail(String email) { this.email = email; }
 
+
+
     /** @return representación corta: "Nombre - DNI" */
     @Override
     public String toString() { return nombre + " - " + dni; }

@@ -63,6 +63,8 @@ public class Moto {
         this.stock += unidades;
     }
 
+
+
     /** @return representación corta: {@code "Marca Modelo (precio €)"} con 2 decimales */
     @Override
     public String toString() { return marca + " " + modelo + " (" + String.format("%.2f", precio) + " €)"; }

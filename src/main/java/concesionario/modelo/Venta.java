@@ -59,6 +59,8 @@ public class Venta {
         return total;
     }
 
+
+
     /** @return descripción legible de la venta */
     @Override
     public String toString() {
