@@ -24,8 +24,6 @@ public class DatosTest {
         datos.addCliente(new Cliente("Ana", "11111111A", "600", "ana@ex.com"));
     }
 
-    // --- addCliente ---
-
     @Test
     public void addClienteNuevoDevuelveTrue() {
         boolean ok = datos.addCliente(new Cliente("Carlos", "22222222B", "600", "c@ex.com"));
@@ -37,8 +35,6 @@ public class DatosTest {
         boolean ok = datos.addCliente(new Cliente("Ana Dup", "11111111A", "600", "dup@ex.com"));
         assertFalse(ok);
     }
-
-    // --- descontarStock (éxito) ---
 
     @Test
     public void descontarStockSuficienteDevuelveTrue() {
@@ -57,8 +53,6 @@ public class DatosTest {
         datos.descontarStock(sel);
         assertEquals(1, cl500.getStock()); // 3 - 2 = 1
     }
-
-    // --- descontarStock (falta de stock) ---
 
     @Test
     public void descontarStockInsuficienteDevuelveFalse() {
